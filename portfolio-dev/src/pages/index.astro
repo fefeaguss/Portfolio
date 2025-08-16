@@ -1,18 +1,28 @@
 ---
-import '../styles/global.css';
-import Layout from '../layouts/Layout.astro';
-import Badge from '../components/badge.astro';
-
+import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/badge.astro";
 ---
 
 <Layout>
-	<main>
-        <section class="w-full lg:w-[740] mx-auto py-44"> 
-        <h1 class="text-white text-5xl font-bold flex justify-center flex-row">Software Developer</h1>
-        <h2 class="flex justify-center">&lbrace; Python, React, tailwindCSS, SQlserver, MySQL, VB.net &rbrace;</h2>
-        <p class="flex justify-center w-full">Apasionado por React y Python, implemento tecnologías actuales para transformar ideas en aplicaciones web funcionales.</p>
-       <Badge class="bg-blue-500">Mis proyectos</Badge>
-       <a href="/cv">Ver CV</a>
-        </section>
-    </main>
+  <main>
+    <section class="w-full lg:w-[740] mx-auto py-44">
+      <h1 class="text-white text-7xl font-bold flex justify-center flex-row">
+        Software Developer
+      </h1>
+      <h2 class="flex justify-center">
+        &lbrace; Python, React, tailwindCSS, SQlserver, MySQL, VB.net &rbrace;
+      </h2>
+       <div class="flex justify-center mt-6">
+        <p class="text-center max-w-xl">
+          Apasionado por React y Python, implemento tecnologías actuales para
+          transformar ideas en aplicaciones web funcionales.
+        </p>
+      </div>
+      <div class="flex justify-center items-center gap-10">
+        <Badge class="bg-blue-500">Mis proyectos</Badge>
+        <a href="/cv">Ver CV</a>
+      </div>
+    </section>
+  </main>
 </Layout>
