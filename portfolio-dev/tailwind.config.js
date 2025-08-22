@@ -6,9 +6,15 @@ export default {
 
   ],
   darkMode: 'class',
+important: true,
   theme: {
-    extend: {},
+    extend: {
+        colors: {
+      azulpersonal: '#09C4FB',
+    },
+    },
   },
   plugins: [],
+  
 }
 

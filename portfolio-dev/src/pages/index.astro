@@ -1,28 +1,46 @@
 ---
 import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
-import Badge from "../components/badge.astro";
+import SectionConteiner from "../components/SectionConteiner.astro";
+import Myt from "../components/Myt.astro";
 ---
 
-<Layout>
+<Layout
+  title="Porfolio de federico martinez - Software Developer"
+  description="Portfolio website showcasing the projects and skills of Federico Martinez, a software developer specializing in Python and React."
+>
   <main>
-    <section class="w-full lg:w-[740] mx-auto py-44">
+    <SectionConteiner class="w-full lg:w-[740] mx-auto py-40 pb-0">
       <h1 class="text-white text-7xl font-bold flex justify-center flex-row">
         Software Developer
       </h1>
-      <h2 class="flex justify-center">
+      <h2 class="flex justify-center mt-2">
         &lbrace; Python, React, tailwindCSS, SQlserver, MySQL, VB.net &rbrace;
       </h2>
-       <div class="flex justify-center mt-6">
+      <div class="flex justify-center mt-7">
         <p class="text-center max-w-xl text-wrap">
-          Apasionado por <span class="text-blue-500 font-bold">React y Python</span>, implemento tecnologías actuales para
-          transformar ideas en aplicaciones web funcionales.
+          Apasionado por <span class="text-azulpersonal font-bold"
+            >React y Python</span
+          >, implemento tecnologías actuales para transformar ideas en
+          aplicaciones web funcionales.
         </p>
       </div>
-      <div class="flex justify-center items-center gap-10">
-        <Badge class="bg-blue-500">Mis proyectos</Badge>
-        <a href="/cv">Ver CV</a>
+      <div class="flex justify-center items-center gap-10 pt-4">
+        <button
+          class="bg-azulpersonal text-black text-xs font-bold me-2 px-4 py-2 rounded-full dark:bg-blue-900 dark:text-black"
+        >
+          Mis proyectos
+        </button>
+
+        <a
+          href="/cv"
+          class="text-azulpersonal font-semibold underline underline-offset-8"
+          >Download CV</a
+        >
       </div>
-    </section>
+    </SectionConteiner>
+    <SectionConteiner class="py-0">
+      <Myt />
+    </SectionConteiner>
   </main>
 </Layout>
